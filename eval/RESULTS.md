@@ -4,8 +4,8 @@ Retrieval quality on the golden question set. One row per run; append new rows a
 the pipeline changes (embedding model, chunking, corpus, retrieval params).
 
 Metrics are computed by `python -m eval.run` against `eval/golden.jsonl`:
-- **Recall@k** — fraction of questions where a labeled supporting chunk appears in the top *k*.
-- **MRR** — mean reciprocal rank of the first labeled supporting chunk.
+- **Recall@k**: fraction of questions where a labeled supporting chunk appears in the top *k*.
+- **MRR**: mean reciprocal rank of the first labeled supporting chunk.
 
 | Date | Model | Corpus | Golden n | Recall@3 | Recall@5 | Recall@10 | MRR | Notes |
 |------|-------|--------|---------:|---------:|---------:|----------:|-----:|-------|

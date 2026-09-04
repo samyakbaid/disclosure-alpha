@@ -1,0 +1,29 @@
+{"question": "What risks does Apple face from its reliance on third-party manufacturing and suppliers?", "ticker": "AAPL", "section": "Risk Factors", "supporting_chunk_ids": ["dbe093c3-a538-4cc7-8e6f-1e97a130a8be"]}
+{"question": "How could foreign exchange rate fluctuations affect Apple's results?", "ticker": "AAPL", "section": "Risk Factors", "supporting_chunk_ids": ["39fec2c8-4b21-44b1-8413-ef404d3af3db"]}
+{"question": "What does Apple say drove changes in its Services revenue?", "ticker": "AAPL", "section": "MD&A", "supporting_chunk_ids": ["333cd132-79ba-496a-acdc-49be83c7173a"]}
+{"question": "What are Microsoft's main operating segments?", "ticker": "MSFT", "section": "Business", "supporting_chunk_ids": ["e4452123-f7b1-45af-99d3-68924dee9ab0"]}
+{"question": "What cybersecurity risks does Microsoft disclose?", "ticker": "MSFT", "section": "Risk Factors", "supporting_chunk_ids": ["1d79f9b6-217d-4d5b-b1c5-5817cfc50326"]}
+{"question": "What does Microsoft attribute its Intelligent Cloud growth to?", "ticker": "MSFT", "section": "MD&A", "supporting_chunk_ids": ["f1912e01-5b43-4692-9a56-a8171dc87a6a"]}
+{"question": "What risks does NVIDIA cite related to competition in the GPU market?", "ticker": "NVDA", "section": "Risk Factors", "supporting_chunk_ids": ["4aa72637-a2b0-47e6-9b42-48d766c7068e"]}
+{"question": "How do export controls and trade restrictions affect NVIDIA?", "ticker": "NVDA", "section": "Risk Factors", "supporting_chunk_ids": ["44271434-adf7-4663-bd29-41af78a07644"]}
+{"question": "What does NVIDIA attribute its Data Center revenue growth to?", "ticker": "NVDA", "section": "MD&A", "supporting_chunk_ids": ["3dfba5dc-aecc-4572-bc00-c2230ab11be6"]}
+{"question": "How is JPMorgan exposed to interest rate risk?", "ticker": "JPM", "section": "Market Risk", "supporting_chunk_ids": ["f4036d2b-1977-4409-b087-2763abc036be"]}
+{"question": "What regulatory risks does JPMorgan disclose?", "ticker": "JPM", "section": "Risk Factors", "supporting_chunk_ids": ["ef39b017-c30e-4acc-8dea-4eb949e20673"]}
+{"question": "What risks does ExxonMobil cite related to commodity price volatility?", "ticker": "XOM", "section": "Risk Factors", "supporting_chunk_ids": ["da6f9049-ea33-46d1-886e-c6895e513613"]}
+{"question": "What product categories does Procter & Gamble operate in?", "ticker": "PG", "section": "Business", "supporting_chunk_ids": ["3f2849db-ba0c-4cdc-a301-84fc5e2aba0b"]}
+{"question": "What does P&G say about the impact of commodity costs on margins?", "ticker": "PG", "section": "MD&A", "supporting_chunk_ids": ["39c7b97d-e4e4-48ae-a170-3785632678e9"]}
+{"question": "What risks does UnitedHealth face from changes in government healthcare programs?", "ticker": "UNH", "section": "Risk Factors", "supporting_chunk_ids": ["dc1b3812-47d1-4471-9822-f42d60d01fe1"]}
+{"question": "What risks does Home Depot cite related to the housing market and consumer spending?", "ticker": "HD", "section": "Risk Factors", "supporting_chunk_ids": ["de2944e2-d429-468f-8e81-1e152c402a79"]}
+{"question": "What does Home Depot say about comparable store sales performance?", "ticker": "HD", "section": "MD&A", "supporting_chunk_ids": ["a485c81b-70d7-45d9-abcf-aedb10663b54"]}
+{"question": "What risks does Caterpillar disclose related to global economic conditions?", "ticker": "CAT", "section": "Risk Factors", "supporting_chunk_ids": ["4380d789-678d-437d-87c6-8a41ab3029a6"]}
+{"question": "How is Caterpillar exposed to foreign currency risk?", "ticker": "CAT", "section": "Market Risk", "supporting_chunk_ids": ["4380d789-678d-437d-87c6-8a41ab3029a6"]}
+{"question": "What are Coca-Cola's primary sources of revenue?", "ticker": "KO", "section": "Business", "supporting_chunk_ids": ["1eb9f8be-3d6e-49a1-b34a-8c7b2629411c"]}
+{"question": "What risks does Coca-Cola cite regarding changing consumer preferences?", "ticker": "KO", "section": "Risk Factors", "supporting_chunk_ids": ["25a31d60-9898-4f1c-bb61-19e4a2494bc4"]}
+{"question": "What risks does Pfizer disclose related to patent expirations?", "ticker": "PFE", "section": "Risk Factors", "supporting_chunk_ids": ["1bc4c217-4fe7-491d-9658-d41640362823"]}
+{"question": "What does Pfizer say about revenue tied to its COVID-19 products?", "ticker": "PFE", "section": "MD&A", "supporting_chunk_ids": ["668ffa8a-1968-4a8a-8b9a-2f3de539e9f1"]}
+{"question": "What risks does Boeing cite related to production and regulatory approval of its aircraft?", "ticker": "BA", "section": "Risk Factors", "supporting_chunk_ids": ["626f0564-4f2f-43e0-9add-b9dc6a16d421"]}
+{"question": "What does Boeing say about its commercial airplane deliveries?", "ticker": "BA", "section": "MD&A", "supporting_chunk_ids": ["2c7a2767-2b13-4904-a962-8f1bc7153d5f"]}
+{"question": "What are Disney's main business segments?", "ticker": "DIS", "section": "Business", "supporting_chunk_ids": ["8163110b-c657-45d8-9345-55289c22ed90"]}
+{"question": "What risks does Disney disclose about its streaming business?", "ticker": "DIS", "section": "Risk Factors", "supporting_chunk_ids": ["b418c5dc-00a4-445d-85f5-3c2e907cc873"]}
+{"question": "What supply chain risks does Cisco cite?", "ticker": "CSCO", "section": "Risk Factors", "supporting_chunk_ids": ["54557362-bf9c-4bfe-a1e1-692d826d45ff"]}
+{"question": "What does Cisco say about product revenue trends?", "ticker": "CSCO", "section": "MD&A", "supporting_chunk_ids": ["9462a7a6-e9a7-4e51-967a-3e3167a9e8b1"]}

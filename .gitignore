@@ -1,0 +1,13 @@
+# Large / regenerable artifacts: downloaded filings, processed corpus, Qdrant DB
+data/
+*.parquet
+
+# Local environment
+.venv/
+# .env holds the SEC contact string — must never be committed
+.env
+
+# Caches
+__pycache__/
+.ruff_cache/
+.DS_Store

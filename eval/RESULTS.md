@@ -44,6 +44,8 @@ the sources:
 | Date | Generator | Judge | Answers | Mean faithfulness | Unsupported claim rate | Notes |
 |------|-----------|-------|--------:|-------------------:|------------------------:|-------|
 | 2026-09-05 | `gpt-5.6-terra` (`agent/generate.py`) | Claude, judged by hand this run (see calibration note) | 29 | 100% | 0.0% (0/131 claims) | Baseline. Every one of 131 claims across all 29 answers checked out against its cited source text: no fabrications, no unsupported figures. This is above the 80-95% usually expected of a naive baseline; see the calibration note below for why, and treat this number as provisional until it's re-run through the real automated judge. |
+| 2026-09-05 | `gpt-5.6-terra` (`agent/generate.py`) | `gpt-5.6-terra` (`eval/faithfulness.py`, real API call) | 29 | 99.3% | 0.6% (2/355 claims) | Same baseline answers, re-scored by the actual automated judge instead of a manual read. Lands close to the hand-scored 100% above (within a point), which is a decent sign for that manual pass, though the two aren't independent checks of each other (see calibration note). |
+| 2026-09-05 | `agent/agent.py` (decompose -> retrieve -> retry -> verify) | `gpt-5.6-terra` (`eval/faithfulness.py`, real API call) | 29 | 99.6% | 0.7% (3/417 claims) | See "Does the agent help?" below - short answer: no, not measurably, and it costs ~2.9x the tokens. |
 
 **How this run was actually scored, and why that matters:** this baseline was
 judged by Claude Code reading each answer against its full source chunks
@@ -72,7 +74,79 @@ trusting this number:
 3. **This has not been calibrated against independent human labels.** Before
    trusting this eval for real decisions (e.g. comparing generators or
    prompts), run `python -m eval.faithfulness` for real (needs
-   `ANTHROPIC_API_KEY` in `.env`) and hand-check ~10 of its verdicts yourself
+   `OPENAI_API_KEY` in `.env`) and hand-check ~10 of its verdicts yourself
    the way the original plan called for: if you agree with the automated
    judge 8+ times out of 10, trust it; if not, tighten `JUDGE` in
    `eval/faithfulness.py`.
+
+`eval/faithfulness.py` was originally written against the Anthropic API (no
+key available in this project), so it now judges with `gpt-5.6-terra` instead
+- the same model `agent/generate.py` and `agent/agent.py` use to write the
+answers. That is a second, separate limitation on top of the one above: the
+judge is the same model family as the generator, which tends to be more
+forgiving of that model's own kind of mistake than an independent model would
+be. If you get an Anthropic key later, switching the judge back to Claude
+would make this a more independent check.
+
+One implementation note worth keeping: `gpt-5.6-terra` is a reasoning model,
+so `max_completion_tokens` covers its hidden reasoning tokens as well as the
+visible JSON. The first real run of `eval/faithfulness.py` crashed partway
+through on one answer with `json.decoder.JSONDecodeError: Expecting value` -
+the model had spent its whole 1000-token budget reasoning and returned empty
+content. Fixed by raising the cap to 4000 and adding a retry plus a
+per-answer try/except in `run()` so one bad response logs an `error` entry
+instead of taking down the whole batch.
+
+## Does the agent help?
+
+`agent/agent.py` (decompose the question, retrieve per sub-question, retry if
+a sub-question comes up short, draft, then verify the draft against sources)
+against the naive single-shot `agent/generate.py`, both over the same 29 golden
+questions, both scored by the same judge run:
+
+| System | Mean faithfulness | Unsupported claims | Avg tokens/query |
+|---|---:|---:|---:|
+| Naive baseline (`agent/generate.py`) | 99.3% | 0.6% (2/355) | 7,484 |
+| Agent (`agent/agent.py`) | 99.6% | 0.7% (3/417) | 21,751 |
+
+**The agent does not measurably improve faithfulness, and it costs about 2.9x
+the tokens per query.** Be honest about what these numbers can and can't show:
+with only 2 and 3 unsupported claims total, the 99.3% vs 99.6% gap is noise,
+not a signal - a sample this size can't distinguish "essentially the same" from
+"very slightly better." If anything, pooled across all claims the agent's
+unsupported *rate* is a hair higher, not lower, despite having an explicit
+verify step whose whole job is to strip unsupported claims before returning
+the answer. That is not what you'd expect a working verify step to do, so it's
+worth asking why rather than reporting a null result and moving on:
+
+- **The agent generates more claims per answer** (417 vs 355 across the same
+  29 questions, about 2.1 more per answer) because it deduplicates chunks
+  across up to two sub-question retrievals instead of pulling a fixed 5, so it
+  has more source material to write from. More claims is more surface area for
+  an unsupported one to slip in, even at a similar or better per-claim
+  accuracy - which is consistent with what the table actually shows.
+- **The verify step is the same model checking its own draft**, not an
+  independent reviewer. Self-critique by the same model that wrote the draft
+  is a weaker check than an independent one, for the same reason the judge
+  being `gpt-5.6-terra` (matching the generator) is a weaker check than an
+  independent judge would be. Two of the three unsupported claims the agent
+  produced read like slightly-too-confident synthesis across sources rather
+  than fabrication (e.g. inferring a causal link - "Medicare funding
+  reductions were contributors to higher medical costs" - that's plausible but
+  not quite what the cited source states) - exactly the kind of thing a
+  same-model verify pass tends to wave through, because it's the sort of
+  inference that model would make again if asked to re-check it.
+- **Spot-checking the judge's catches suggests they're real, not noise.** One
+  baseline miss ("stronger foreign currencies had a favorable... effect on
+  Europe sales" attributed to "Q3 2026") pins a fact to the wrong quarter - the
+  source ties that Europe effect to the first nine months of 2026, not the
+  third quarter specifically. That's a legitimate catch this project's own
+  manual read (100% baseline row above) missed, which is a good sign for the
+  automated judge's calibration even with the same-model-family caveat.
+
+If you want the agent's extra machinery to actually pay for itself, the
+verify step needs to be either a different (ideally independent) model, or
+given a harder job than "does this look OK to you" - for example handing it
+the same claim-by-claim breakdown `eval/faithfulness.py` produces and having
+it act on unsupported claims specifically, rather than a free-form rewrite.
+Right now it is 3x the cost for a result indistinguishable from not having it.

@@ -19,6 +19,10 @@ index/build_index.py    embeds the chunks (bge-small-en-v1.5) into a local
 index/retrieve.py       semantic search over the index
 agent/generate.py       answers a question: retrieves chunks, asks an LLM to
                         answer using only those chunks, cites them inline
+agent/agent.py          a multi-step version of the same idea: splits the
+                        question, retries retrieval if a sub-question comes up
+                        short, then verifies the drafted answer against sources
+                        before returning it
 eval/                   a hand-labeled question set (Recall@k / MRR) and a
                         faithfulness/groundedness check on generated answers,
                         both tracked in eval/RESULTS.md
@@ -76,15 +80,19 @@ Then, to check the generated answers are actually grounded in their sources
 
 ```bash
 python -m agent.generate           # needs OPENAI_API_KEY in .env; try one question
-python -m eval.faithfulness        # needs ANTHROPIC_API_KEY in .env; scores a batch
+python -m agent.agent              # a fancier version: decompose -> retrieve -> verify
+python -m eval.faithfulness        # needs OPENAI_API_KEY in .env; scores a batch
 ```
 
 `eval.faithfulness` expects a file of generated answers (question, answer,
-source_ids) at `eval/baseline_answers.json`; there is no script yet that
-generates that file in bulk from `eval/golden.jsonl`, so build one (a loop over
-`agent.generate`) before running it fresh. It calls the Anthropic API once per
-answer to judge groundedness, so it costs real API credits: see the calibration
-note below before you run a large batch.
+source_ids); `eval/baseline_answers.json` (from `agent.generate`) and
+`eval/agent_answers.json` (from `agent.agent`) are both committed, one answer
+per golden question, so you can score either without regenerating them. There
+is no persisted script that builds a file like that in bulk though (both were
+made with a one-off loop over `eval/golden.jsonl`), so write one if you want to
+regenerate. Scoring calls the OpenAI API once per answer (`gpt-5.6-terra`, the
+same model the generators use for synthesis), so it costs real API credits:
+see the calibration note below before you run a large batch.
 
 Optional: `python -m ingest.load_transcripts` grabs earnings call transcripts for
 the same companies into `data/processed/transcripts.parquet`. Nothing uses them
@@ -100,17 +108,28 @@ around 10 of its verdicts yourself: read the answer, read the sources, decide
 if you agree. Aim for 8 or more out of 10 agreeing; if it is lower, tighten the
 `JUDGE` prompt in `eval/faithfulness.py` and check again.
 
-The baseline logged in `eval/RESULTS.md` (100% faithfulness, 29 answers, 131
-claims) was not scored this way. To avoid spending API credits on a first
-pass, Claude Code read every answer against its full source text directly
-instead of calling the Anthropic API, so the same model produced both the
-verdicts and the "calibration" check in one sitting. That is a real limitation
-worth knowing about (it is not independent human labels), even though the
-checking itself was thorough. Read the calibration note in `eval/RESULTS.md`
-for what that run actually found before treating 100% as a settled number.
-Once you run `eval.faithfulness` for real, replace this baseline with an
-actual hand-calibrated run and note the agreement rate here, for example:
-"LLM-as-judge calibrated against 10 human labels, 90% agreement."
+The very first baseline number logged in `eval/RESULTS.md` (100% faithfulness)
+was not scored this way - to avoid spending API credits on a first pass,
+Claude Code read every answer against its full source text directly instead of
+calling an LLM judge, so the same model produced both the verdicts and the
+"calibration" check in one sitting. `eval/faithfulness.py` has since actually
+been run for real (twice: once on the naive baseline, once on `agent/agent.py`'s
+answers), and it landed close to that manual read (99.3% vs 100%), which is a
+reassuring sign but still not the calibration this section is asking for.
+
+**Nobody has done the actual hand-check yet.** Both real runs used
+`gpt-5.6-terra` as the judge - the same model `agent/generate.py` and
+`agent/agent.py` use to write the answers, since there's no Anthropic key in
+this project to give the judge a different provider from the generator the way
+the original design intended. A model judging its own family's output, with
+no independent human spot-check on top of it, is the weakest version of this
+eval that still produces a number. Before trusting any faithfulness comparison
+here (e.g. deciding the agent isn't worth its extra tokens, see
+`eval/RESULTS.md`), read 10 of the answers in `eval/faithfulness_results.json`
+or `eval/agent_faithfulness_results.json` against their sources yourself and
+see if you agree with the verdicts. Once you do, replace this note with the
+actual result, for example: "LLM-as-judge calibrated against 10 human labels,
+90% agreement."
 
 ## Notes on coverage
 

@@ -1,24 +1,24 @@
 [
   {
     "question": "What risks does Apple face from its reliance on third-party manufacturing and suppliers?",
-    "total_claims": 23,
-    "supported_claims": 23,
+    "total_claims": 14,
+    "supported_claims": 14,
     "unsupported": [],
     "faithfulness": 1.0
   },
   {
     "question": "How could foreign exchange rate fluctuations affect Apple's results?",
-    "total_claims": 11,
-    "supported_claims": 10,
+    "total_claims": 20,
+    "supported_claims": 19,
     "unsupported": [
-      "In Q3 2026, stronger foreign currencies had a favorable year-over-year effect on Europe sales."
+      "These strategies may still affect its consolidated financial statements."
     ],
-    "faithfulness": 0.9090909090909091
+    "faithfulness": 0.95
   },
   {
     "question": "What does Apple say drove changes in its Services revenue?",
-    "total_claims": 3,
-    "supported_claims": 3,
+    "total_claims": 2,
+    "supported_claims": 2,
     "unsupported": [],
     "faithfulness": 1.0
   },
@@ -31,57 +31,57 @@
   },
   {
     "question": "What cybersecurity risks does Microsoft disclose?",
-    "total_claims": 18,
-    "supported_claims": 18,
+    "total_claims": 32,
+    "supported_claims": 32,
     "unsupported": [],
     "faithfulness": 1.0
   },
   {
     "question": "What does Microsoft attribute its Intelligent Cloud growth to?",
-    "total_claims": 6,
-    "supported_claims": 6,
+    "total_claims": 9,
+    "supported_claims": 9,
     "unsupported": [],
     "faithfulness": 1.0
   },
   {
     "question": "What risks does NVIDIA cite related to competition in the GPU market?",
-    "total_claims": 6,
-    "supported_claims": 6,
+    "total_claims": 8,
+    "supported_claims": 8,
     "unsupported": [],
     "faithfulness": 1.0
   },
   {
     "question": "How do export controls and trade restrictions affect NVIDIA?",
-    "total_claims": 25,
-    "supported_claims": 25,
+    "total_claims": 0,
+    "supported_claims": 0,
     "unsupported": [],
     "faithfulness": 1.0
   },
   {
     "question": "What does NVIDIA attribute its Data Center revenue growth to?",
-    "total_claims": 6,
-    "supported_claims": 6,
+    "total_claims": 8,
+    "supported_claims": 8,
     "unsupported": [],
     "faithfulness": 1.0
   },
   {
     "question": "How is JPMorgan exposed to interest rate risk?",
-    "total_claims": 5,
-    "supported_claims": 5,
+    "total_claims": 22,
+    "supported_claims": 22,
     "unsupported": [],
     "faithfulness": 1.0
   },
   {
     "question": "What regulatory risks does JPMorgan disclose?",
-    "total_claims": 39,
-    "supported_claims": 39,
+    "total_claims": 31,
+    "supported_claims": 31,
     "unsupported": [],
     "faithfulness": 1.0
   },
   {
     "question": "What risks does ExxonMobil cite related to commodity price volatility?",
-    "total_claims": 5,
-    "supported_claims": 5,
+    "total_claims": 7,
+    "supported_claims": 7,
     "unsupported": [],
     "faithfulness": 1.0
   },
@@ -94,87 +94,87 @@
   },
   {
     "question": "What does P&G say about the impact of commodity costs on margins?",
-    "total_claims": 6,
-    "supported_claims": 6,
+    "total_claims": 18,
+    "supported_claims": 18,
     "unsupported": [],
     "faithfulness": 1.0
   },
   {
     "question": "What risks does UnitedHealth face from changes in government healthcare programs?",
-    "total_claims": 31,
-    "supported_claims": 31,
-    "unsupported": [],
-    "faithfulness": 1.0
+    "total_claims": 26,
+    "supported_claims": 25,
+    "unsupported": [
+      "Medicare funding reductions were contributors to higher medical costs in 2025."
+    ],
+    "faithfulness": 0.9615384615384616
   },
   {
     "question": "What risks does Home Depot cite related to the housing market and consumer spending?",
-    "total_claims": 6,
-    "supported_claims": 6,
-    "unsupported": [],
-    "faithfulness": 1.0
-  },
-  {
-    "question": "What does Home Depot say about comparable store sales performance?",
-    "total_claims": 16,
-    "supported_claims": 16,
-    "unsupported": [],
-    "faithfulness": 1.0
-  },
-  {
-    "question": "What risks does Caterpillar disclose related to global economic conditions?",
-    "total_claims": 8,
-    "supported_claims": 8,
-    "unsupported": [],
-    "faithfulness": 1.0
-  },
-  {
-    "question": "How is Caterpillar exposed to foreign currency risk?",
-    "total_claims": 8,
-    "supported_claims": 8,
-    "unsupported": [],
-    "faithfulness": 1.0
-  },
-  {
-    "question": "What are Coca-Cola's primary sources of revenue?",
-    "total_claims": 6,
-    "supported_claims": 6,
-    "unsupported": [],
-    "faithfulness": 1.0
-  },
-  {
-    "question": "What risks does Coca-Cola cite regarding changing consumer preferences?",
-    "total_claims": 10,
-    "supported_claims": 9,
-    "unsupported": [
-      "Coca-Cola must adapt its portfolio, packaging and information offerings accordingly."
-    ],
-    "faithfulness": 0.9
-  },
-  {
-    "question": "What risks does Pfizer disclose related to patent expirations?",
-    "total_claims": 8,
-    "supported_claims": 8,
-    "unsupported": [],
-    "faithfulness": 1.0
-  },
-  {
-    "question": "What does Pfizer say about revenue tied to its COVID-19 products?",
     "total_claims": 14,
     "supported_claims": 14,
     "unsupported": [],
     "faithfulness": 1.0
   },
   {
+    "question": "What does Home Depot say about comparable store sales performance?",
+    "total_claims": 24,
+    "supported_claims": 24,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What risks does Caterpillar disclose related to global economic conditions?",
+    "total_claims": 4,
+    "supported_claims": 4,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "How is Caterpillar exposed to foreign currency risk?",
+    "total_claims": 14,
+    "supported_claims": 14,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What are Coca-Cola's primary sources of revenue?",
+    "total_claims": 8,
+    "supported_claims": 8,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What risks does Coca-Cola cite regarding changing consumer preferences?",
+    "total_claims": 9,
+    "supported_claims": 9,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What risks does Pfizer disclose related to patent expirations?",
+    "total_claims": 17,
+    "supported_claims": 17,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What does Pfizer say about revenue tied to its COVID-19 products?",
+    "total_claims": 22,
+    "supported_claims": 22,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
     "question": "What risks does Boeing cite related to production and regulatory approval of its aircraft?",
-    "total_claims": 21,
-    "supported_claims": 21,
+    "total_claims": 0,
+    "supported_claims": 0,
     "unsupported": [],
     "faithfulness": 1.0
   },
   {
     "question": "What does Boeing say about its commercial airplane deliveries?",
-    "total_claims": 11,
-    "supported_claims": 11,
+    "total_claims": 21,
+    "supported_claims": 21,
     "unsupported": [],
     "faithfulness": 1.0
   },
@@ -187,10 +187,12 @@
   },
   {
     "question": "What risks does Disney disclose about its streaming business?",
-    "total_claims": 29,
-    "supported_claims": 29,
-    "unsupported": [],
-    "faithfulness": 1.0
+    "total_claims": 33,
+    "supported_claims": 32,
+    "unsupported": [
+      "Changes in technology, consumer purchasing patterns, acceptance of content offerings, macroeconomic conditions, and advertising markets may impair asset values and adversely affect DTC and other distribution-platform results."
+    ],
+    "faithfulness": 0.9696969696969697
   },
   {
     "question": "What supply chain risks does Cisco cite?",
@@ -201,8 +203,8 @@
   },
   {
     "question": "What does Cisco say about product revenue trends?",
-    "total_claims": 15,
-    "supported_claims": 15,
+    "total_claims": 35,
+    "supported_claims": 35,
     "unsupported": [],
     "faithfulness": 1.0
   }

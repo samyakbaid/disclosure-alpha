@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: disclosure-alpha
+    runtime: python
+    plan: free
+    buildCommand: bash render_build.sh
+    startCommand: python app.py
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: HF_TOKEN
+        sync: false
+      - key: HF_DATASET_REPO
+        value: Samyakbaid11/disclosure-alpha-data
+      - key: MAX_QUERIES_PER_DAY
+        value: "20"
+      - key: PORT
+        value: "10000"
+      - key: PYTHONPATH
+        value: "."

@@ -1,14 +1,12 @@
 from pathlib import Path
-import torch
 from sentence_transformers import SentenceTransformer
 from qdrant_client import QdrantClient
 from qdrant_client.models import Filter, FieldCondition, MatchValue
 
 ROOT = Path(__file__).resolve().parents[1]
-device = ("cuda" if torch.cuda.is_available()
-          else "mps" if torch.backends.mps.is_available()
-          else "cpu")
-_model = SentenceTransformer("BAAI/bge-m3", device=device)   # must match build_index
+
+_model = SentenceTransformer("BAAI/bge-small-en-v1.5")
+_model.max_seq_length = 512
 _client = QdrantClient(path=str(ROOT / "data" / "qdrant"))
 
 def retrieve(query, k=5, ticker=None, section=None):

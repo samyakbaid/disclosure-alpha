@@ -17,8 +17,11 @@ ingest/chunk.py         pulls out Business / Risk Factors / MD&A / Market Risk
 index/build_index.py    embeds the chunks (bge-small-en-v1.5) into a local
                         Qdrant db at data/qdrant
 index/retrieve.py       semantic search over the index
-eval/                   a small hand-labeled question set + a Recall@k / MRR
-                        harness, results tracked in eval/RESULTS.md
+agent/generate.py       answers a question: retrieves chunks, asks an LLM to
+                        answer using only those chunks, cites them inline
+eval/                   a hand-labeled question set (Recall@k / MRR) and a
+                        faithfulness/groundedness check on generated answers,
+                        both tracked in eval/RESULTS.md
 ```
 
 Everything regenerable (the filings, the chunks, the vector db) lives under
@@ -68,9 +71,46 @@ Heads up: every time you re-run `ingest.chunk` the chunk ids are regenerated
 (they are fresh UUIDs), so the golden labels point at ids that no longer exist.
 If you change the chunking, re-run `index.build_index` and then re-label.
 
+Then, to check the generated answers are actually grounded in their sources
+(not just that retrieval found the right chunks):
+
+```bash
+python -m agent.generate           # needs OPENAI_API_KEY in .env; try one question
+python -m eval.faithfulness        # needs ANTHROPIC_API_KEY in .env; scores a batch
+```
+
+`eval.faithfulness` expects a file of generated answers (question, answer,
+source_ids) at `eval/baseline_answers.json`; there is no script yet that
+generates that file in bulk from `eval/golden.jsonl`, so build one (a loop over
+`agent.generate`) before running it fresh. It calls the Anthropic API once per
+answer to judge groundedness, so it costs real API credits: see the calibration
+note below before you run a large batch.
+
 Optional: `python -m ingest.load_transcripts` grabs earnings call transcripts for
 the same companies into `data/processed/transcripts.parquet`. Nothing uses them
 yet.
+
+## Calibrating the faithfulness judge
+
+`eval/faithfulness.py` is an LLM-as-judge: it reads an answer and its cited
+sources and decides how many of the answer's claims are actually backed by
+them. An LLM judge is only worth trusting once you know it agrees with a human
+reading the same material, so before you rely on its numbers, hand-check
+around 10 of its verdicts yourself: read the answer, read the sources, decide
+if you agree. Aim for 8 or more out of 10 agreeing; if it is lower, tighten the
+`JUDGE` prompt in `eval/faithfulness.py` and check again.
+
+The baseline logged in `eval/RESULTS.md` (100% faithfulness, 29 answers, 131
+claims) was not scored this way. To avoid spending API credits on a first
+pass, Claude Code read every answer against its full source text directly
+instead of calling the Anthropic API, so the same model produced both the
+verdicts and the "calibration" check in one sitting. That is a real limitation
+worth knowing about (it is not independent human labels), even though the
+checking itself was thorough. Read the calibration note in `eval/RESULTS.md`
+for what that run actually found before treating 100% as a settled number.
+Once you run `eval.faithfulness` for real, replace this baseline with an
+actual hand-calibrated run and note the agreement rate here, for example:
+"LLM-as-judge calibrated against 10 human labels, 90% agreement."
 
 ## Notes on coverage
 

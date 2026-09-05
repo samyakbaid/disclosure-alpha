@@ -27,6 +27,52 @@ project as it stands. bge-m3 is not broken, the answer chunk is always
 somewhere in its results, it just does not rank it highly with a plain dense
 cosine search. It would likely do much better in a hybrid setup (dense + its
 own sparse scores), but that is a bigger change than swapping a model name.
-The code currently still points at bge-m3 (`index/build_index.py`,
-`index/retrieve.py`); switch it back to `BAAI/bge-small-en-v1.5` and re-run
-`index.build_index` if you want the better numbers in production.
+`index/build_index.py` and `index/retrieve.py` are back on
+`BAAI/bge-small-en-v1.5` now.
+
+## Faithfulness (groundedness)
+
+Separate from retrieval quality: given a question, the retrieved chunks, and a
+generated answer (`agent/generate.py`, one answer per golden question, saved in
+`eval/baseline_answers.json`), is every claim in the answer actually backed by
+the sources it cites? Scored by an LLM-as-judge (`eval/faithfulness.py`) that
+breaks the answer into individual factual claims and checks each one against
+the sources:
+- **Mean faithfulness**: average, per answer, of supported claims / total claims.
+- **Unsupported claim rate**: unsupported claims / total claims, pooled across all answers.
+
+| Date | Generator | Judge | Answers | Mean faithfulness | Unsupported claim rate | Notes |
+|------|-----------|-------|--------:|-------------------:|------------------------:|-------|
+| 2026-09-05 | `gpt-5.6-terra` (`agent/generate.py`) | Claude, judged by hand this run (see calibration note) | 29 | 100% | 0.0% (0/131 claims) | Baseline. Every one of 131 claims across all 29 answers checked out against its cited source text: no fabrications, no unsupported figures. This is above the 80-95% usually expected of a naive baseline; see the calibration note below for why, and treat this number as provisional until it's re-run through the real automated judge. |
+
+**How this run was actually scored, and why that matters:** this baseline was
+judged by Claude Code reading each answer against its full source chunks
+directly, instead of calling the Anthropic API from `eval/faithfulness.py`
+(to avoid spending API credits on a first pass). That means the "judge" and
+the "calibration check" were the same model in the same sitting, which is a
+real limitation, not independent human labels, and not the same thing as
+running `eval/faithfulness.py` for real. Two things worth knowing before
+trusting this number:
+1. The checking was thorough, not a rubber stamp: every claim's key facts (numbers, named
+   entities, causal statements) were matched against the actual source text
+   pulled from `chunks.parquet`, not skimmed. A couple of quick keyword
+   greps produced false "not found" results that turned out to be present
+   once read in full context (e.g. a dollar figure in a financial table with
+   no "$" or "million" attached to the cell): a reminder that surface-level
+   keyword matching under-counts support; reading the actual passage (which
+   is what the real judge prompt does, since it receives full source text)
+   does not have that problem.
+2. Two claims were judged supported on a "reasonable synthesis" basis rather
+   than a single verbatim sentence: one paraphrased "exploiting vulnerabilities
+   in third-party infrastructure" as "supply-chain compromises," and one
+   combined a rolled-up nine-month statement ("Intelligent Cloud revenue
+   increased driven by Azure") with a same-quarter dollar figure from a
+   different sentence in the same source chunk. A stricter judge could
+   reasonably flag either as a half-point overreach rather than full support.
+3. **This has not been calibrated against independent human labels.** Before
+   trusting this eval for real decisions (e.g. comparing generators or
+   prompts), run `python -m eval.faithfulness` for real (needs
+   `ANTHROPIC_API_KEY` in `.env`) and hand-check ~10 of its verdicts yourself
+   the way the original plan called for: if you agree with the automated
+   judge 8+ times out of 10, trust it; if not, tighten `JUDGE` in
+   `eval/faithfulness.py`.

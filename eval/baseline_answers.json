@@ -1,0 +1,437 @@
+[
+  {
+    "question": "What risks does Apple face from its reliance on third-party manufacturing and suppliers?",
+    "answer": "Apple faces several risks from relying on third-party manufacturers and suppliers:\n\n- **Concentrated outsourced production and reduced control:** Substantially all manufacturing is performed by outsourcing partners\u2014primarily in China mainland, India, Japan, South Korea, Taiwan and Vietnam\u2014with significant concentration among a small number of partners, often at single locations. Outsourcing reduces Apple\u2019s direct control over production and distribution, potentially affecting product quality, quantity and flexibility. [3]\n\n- **Supplier and assembler performance failures:** Apple relies on single-source partners for many components and on Asia-based partners for final assembly of substantially all hardware products. A partner\u2019s failure to perform can negatively affect component or finished-goods cost or supply. [3]\n\n- **Operational and geopolitical disruption:** Manufacturing, logistics and transit may be disrupted by natural or man-made disasters, IT failures, commercial disputes, labor, environmental, public-health or political issues, trade disputes, geopolitical tensions or conflict. [3]\n\n- **Supply shortages and pricing risk:** Certain components come from single or limited sources; components can also face industry-wide shortages and commodity-price fluctuations. Apple cites past semiconductor shortages that impaired its ability to obtain sufficient components and products on commercially reasonable terms, or at all. [3]\n\n- **Custom-component and capacity constraints:** New products often use custom components available from only one supplier. New technologies may face initial capacity constraints, and suppliers may prioritize common components over Apple-customized components. Delayed or constrained supply, or delayed completed-product shipments, has adversely affected Apple and could do so again. [3]\n\n- **Supplier financial distress and unrecoverable investments:** If suppliers or outsourcing partners experience severe financial problems or disruptions, supply may be disrupted or terminated, and Apple\u2019s manufacturing equipment held by partners and supplier prepayments may be less recoverable. [3]\n\n- **Time and risk of supply-chain changes:** Adding or changing supply-chain sources requires considerable time and resources and creates additional regulatory and operational risks. [3]\n\n- **Quality, warranty and conduct risk:** Apple may remain responsible to consumers for warranty and out-of-warranty service even where partner arrangements provide for defect-expense reimbursement. Supplier-code violations occur and can materially harm Apple\u2019s business, reputation, operating results and financial condition. [3]\n\n- **Business-interruption amplification:** Because Apple depends on single or limited sources for many critical components, interruptions at those sources would exacerbate negative effects, including recovery time, expenditures and lost sales. Insurance may not cover all losses. [5]",
+    "source_ids": [
+      "5be03ba5-9ecd-4c30-9a8d-ed3bba14944a",
+      "37342063-44d0-4412-a193-61214b8dacf3",
+      "43fa7270-ae04-4a59-9027-ccc89d090207",
+      "0bb7d8aa-16ba-4b36-a1ce-d6808d6e6cb6",
+      "9b46b657-5593-469b-bd9e-1fa4f0e4608a"
+    ],
+    "usage": {
+      "in": 7193,
+      "out": 504
+    }
+  },
+  {
+    "question": "How could foreign exchange rate fluctuations affect Apple's results?",
+    "answer": "Foreign exchange fluctuations could affect Apple in several ways:\n\n- A strengthening U.S. dollar would negatively affect net sales and gross margins reported in U.S. dollars because Apple is primarily a net receiver of currencies other than the U.S. dollar. Exchange-rate changes can also affect the fair value of certain assets and liabilities. [4], [5]\n- The effects differ by region. In Q3 2026, stronger foreign currencies had a favorable year-over-year effect on Europe and Rest of Asia Pacific sales, and a stronger renminbi favorably affected Greater China sales; conversely, a weaker yen adversely affected Japan sales. [1]\n- Hedging may not fully offset adverse exchange-rate movements, and Apple may elect not to hedge certain exposures due to accounting considerations or prohibitive cost. [2], [4]\n- Apple estimated a 95%-confidence maximum one-day fair-value loss on its foreign-currency derivative positions of $590 million as of September 27, 2025, versus $538 million as of September 28, 2024. Underlying currency exposures excluded from that analysis generally offset derivative fair-value changes. [5]",
+    "source_ids": [
+      "a1c59e30-d409-4b9f-893f-2a341502ae24",
+      "e36ace54-4f4a-4f80-81c0-6ef13b0cf875",
+      "a3769faa-0b84-4738-9181-3cacaa37f81c",
+      "1886bc10-60f3-4b41-b874-5c02a7271103",
+      "bf37b671-c4a3-4802-aa1a-4aae179af03c"
+    ],
+    "usage": {
+      "in": 5149,
+      "out": 235
+    }
+  },
+  {
+    "question": "What does Apple say drove changes in its Services revenue?",
+    "answer": "Apple attributed Services net-sales growth to:\n\n- **Fiscal 2024 vs. 2023:** higher net sales from **advertising, the App Store, and cloud services**. [3]\n- **Fiscal 2025 vs. 2024:** again, higher net sales from **advertising, the App Store, and cloud services**. [4]\n\nApple also said the year-over-year increase in Services gross margin in 2025 was driven primarily by **higher Services net sales and a different mix of services**. [4]",
+    "source_ids": [
+      "031fece4-33a4-42f4-a827-74c0dec1cd38",
+      "9a3ba7b6-5270-47af-b898-8dd7c3a271ee",
+      "cef772e7-23cb-4b2d-b1b9-f88b42eff9d1",
+      "bc8d02e6-fe91-4a4f-a192-5ac94710f494",
+      "a9034145-015a-45e5-9725-0bdc7b2c1241"
+    ],
+    "usage": {
+      "in": 8298,
+      "out": 113
+    }
+  },
+  {
+    "question": "What are Microsoft's main operating segments?",
+    "answer": "Microsoft operates and reports financial performance through three segments:\n\n1. **Productivity and Business Processes** \u2014 includes Microsoft 365 Commercial and Consumer, LinkedIn, and Dynamics products and cloud services. [5]  \n2. **Intelligent Cloud** \u2014 includes public, private, and hybrid server products and cloud services, including Azure. [1]  \n3. **More Personal Computing**. [5]",
+    "source_ids": [
+      "3de33c96-9cd7-4e51-9f9c-553fd75b0aee",
+      "e4452123-f7b1-45af-99d3-68924dee9ab0",
+      "4c0105e2-b90c-44e3-8ba1-b0e2a353b6f6",
+      "32c166c6-9500-4cef-8d2e-2a8887c8b7b2",
+      "f1912e01-5b43-4692-9a56-a8171dc87a6a"
+    ],
+    "usage": {
+      "in": 7660,
+      "out": 84
+    }
+  },
+  {
+    "question": "What cybersecurity risks does Microsoft disclose?",
+    "answer": "Microsoft discloses that cybersecurity risks could lead to \u201creduced revenue, increased costs, liability claims, or harm to our reputation or competitive position.\u201d [1]\n\nKey disclosed risks include:\n\n- **Nation-state, cybercriminal, and other attacks:** Threat actors may use malware, vulnerabilities, social engineering, coordinated attacks, and supply-chain compromises to access Microsoft, customer, or datacenter systems. Microsoft states it has experienced incidents involving unauthorized access to its systems and data. [1]\n- **Prior nation-state email/source-code incident:** Beginning in late November 2023, a nation-state-associated actor used a password-spray attack on a legacy test account, accessed Microsoft email accounts, and then accessed certain source-code repositories and internal systems. Microsoft says the actor could continue using obtained information to seek access or adversely affect its business. [1]\n- **Patch-management and account-security weaknesses:** Failure to apply patches\u2014including to end-of-life/end-of-support equipment\u2014as well as inadequate password rotation or timely removal of employee access, can result in unauthorized access. [4]\n- **Evolving and AI-enabled threats:** Cyberthreats are becoming more sophisticated and may use AI and machine learning. Microsoft may not detect vulnerabilities or new attack methods, potentially allowing attackers to persist undetected. Generative AI in Microsoft\u2019s internal or third-party systems may also create new attack surfaces. [4]\n- **Incident-response and cascading-risk exposure:** Investigation, containment, remediation, and impact assessment may be difficult, slow, or unsuccessful. Attacks can spread rapidly across Microsoft, partner, and customer systems, and remediation itself can cause outages, data losses, and service disruption. [4]\n- **Cloud, product, and customer-environment vulnerabilities:** The reliability of Microsoft cloud services and protection of customer data depend partly on third-party hardware, software, and infrastructure. Attackers can exploit zero-day vulnerabilities or unpatched product vulnerabilities in customer cloud or on-premises environments. [4]\n- **Personal-data and insider/third-party misuse:** Microsoft may fail to prevent improper disclosure or misuse of customer or user data, identify insider threats, or stop third parties with limited data access from unauthorized use. This could cause legal exposure, liability, increased costs, lost revenue, reputational harm, and reduced cloud adoption. [5]\n- **Security risks from product use and third-party integrations:** Microsoft products may contain design, manufacturing, or operational defects; customers may deploy AI products in high-risk or inappropriate ways; and third-party vendor products or personnel may impair product reliability or security. These events could result in legal claims, enforcement actions, higher costs, reputational damage, or adverse operating results. [5]",
+    "source_ids": [
+      "1d79f9b6-217d-4d5b-b1c5-5817cfc50326",
+      "54de38ec-14d0-40dd-9b4f-a8b123926dd7",
+      "860bccc8-2a0e-4f7a-9092-c8c0b5bb93f9",
+      "c2d7970e-b2fc-452b-811b-d86fdd226a1f",
+      "85f132f0-ecfe-4e7f-99dc-25db4df9d8e7"
+    ],
+    "usage": {
+      "in": 7211,
+      "out": 562
+    }
+  },
+  {
+    "question": "What does Microsoft attribute its Intelligent Cloud growth to?",
+    "answer": "Microsoft attributes Intelligent Cloud growth primarily to **Azure and other cloud services**. In the December 2025 quarter, Intelligent Cloud revenue increased $7.4 billion (29%), with server products and cloud services up $7.2 billion (31%) \u201cdriven by Azure and other cloud services\u201d; Azure and other cloud services grew 39% due to demand across all workloads. [1]\n\nIn the March 2026 quarter, Intelligent Cloud revenue increased $7.9 billion (30%), again driven by Azure; Azure and other cloud services grew 40% from demand across the platform and continued growth across all workloads. [5]",
+    "source_ids": [
+      "8e30dff4-5874-42e2-82ab-41d282892e52",
+      "f1912e01-5b43-4692-9a56-a8171dc87a6a",
+      "ed5b6832-4e27-49a6-b866-e578d42e104f",
+      "ba761686-4f68-4db7-b57f-2d0524cc0db7",
+      "1fe417c9-f8ec-484d-af33-0e6e1da4f452"
+    ],
+    "usage": {
+      "in": 7771,
+      "out": 131
+    }
+  },
+  {
+    "question": "What risks does NVIDIA cite related to competition in the GPU market?",
+    "answer": "NVIDIA cites the following GPU-market competition risks:\n\n- Competitors may offer products, services, or technologies that are cheaper or have better functionality or features, potentially reducing selling prices or demand for NVIDIA products. [4]\n- Competitors may have advantages including their own fabrication facilities, longer operating histories, larger customer bases, broader IP and patent portfolios, more design wins, and greater financial, sales, marketing, and distribution resources. These advantages could enable them to gain market share, transition products more quickly, or constrain NVIDIA\u2019s access to foundry capacity and scarce materials. [2]\n- Customers are developing their own ASICs and other workload-optimized products that may not require all features of NVIDIA data-center systems. [2]\n- Competing cloud-based services may challenge NVIDIA\u2019s AI cloud offerings; NVIDIA may be unable to establish enough market share to achieve needed scale. [2]\n- Open-source AI depends on developer adoption; if it is deployed on competitors\u2019 platforms, demand for NVIDIA products and services could decline. [5]\n- Competitor product releases, announcements, competing technologies, and increased demand for competing products can cause NVIDIA to misestimate demand and affect the timing and volume of revenue. [2]",
+    "source_ids": [
+      "6157a7aa-f805-4377-8953-e2d0520d80d3",
+      "4aa72637-a2b0-47e6-9b42-48d766c7068e",
+      "045461d0-f28b-4d73-8736-8fe5d067d9cd",
+      "3b438916-513d-4659-a619-a30974367d2e",
+      "c7468bfe-207c-4f3c-9c84-38f4a419e5c6"
+    ],
+    "usage": {
+      "in": 7447,
+      "out": 246
+    }
+  },
+  {
+    "question": "How do export controls and trade restrictions affect NVIDIA?",
+    "answer": "Export controls and trade restrictions affect NVIDIA through several channels:\n\n- **Restricted market access and sales:** U.S. controls restrict exports of specified GPUs, systems, and related technology to China, Hong Kong, Macau, Russia, certain Middle Eastern countries, and Country Groups D:1, D:4 and D:5. The April 9, 2025 requirements added licensing for H20 circuits and circuits meeting specified H20 bandwidth thresholds. NVIDIA states it may be unable to develop a competitive China data-center product that obtains U.S. approval, which would effectively foreclose it from China\u2019s data-center compute market. [2], [4]\n\n- **Inventory and supply charges:** Following the H20 licensing requirements, diminished H20 demand resulted in a **\u201c$4.5 billion charge in the first quarter of fiscal year 2026\u201d** for excess inventory and purchase obligations. NVIDIA warns that new controls can similarly cause excess inventory and purchase obligations. [2], [3]\n\n- **Supply-chain and distribution disruption:** Controls may disrupt manufacturing, testing, warehousing, supply chains, and distribution channels. NVIDIA notes that a substantial portion of its products are warehoused in and distributed from Hong Kong, and restrictions on supply from Taiwan and South Korea could negatively affect its business and results. [1], [2]\n\n- **Broader product and geographic impact:** Restrictions on data-center GPUs can reduce demand for networking products used in GPU servers; controls may also extend to networking products. Export controls may impair sales and demand outside China\u2014including Europe, Latin America, Southeast Asia, the U.S., and Europe for gaming products\u2014and can raise costs or limit NVIDIA\u2019s and customers\u2019 ability to provide cloud services. [1], [2]\n\n- **Competitive disadvantage and lost demand:** NVIDIA says controls can disadvantage it relative to competitors whose chips are outside their scope, encourage customers to \u201cdesign-out\u201d U.S. semiconductors, and prompt governments to steer customers toward non-NVIDIA or non-U.S. competitors. [1], [3]\n\n- **Compliance and reputational burden:** Repeatedly changing, complex rules create burdens for NVIDIA, customers, suppliers, and partners. Diversion reports or alleged compliance failures\u2014even if unsubstantiated\u2014may harm its reputation and relationships. [1], [2]\n\n- **Retaliatory and foreign-government risks:** Chinese regulators have investigated whether NVIDIA\u2019s compliance with U.S. controls unfairly discriminates against China-market customers; potential consequences include financial penalties, operating restrictions, and orders affecting its networking business. China has also encouraged purchases from local competitors and discouraged use of NVIDIA data-center products, including China-specific compliant products. [2], [1]\n\n- **Additional trade restrictions:** Potential U.S. restrictions on products incorporating China-developed or manufactured technology, including \u201cConnected Vehicle\u201d restrictions and limits involving China-origin open-source foundation models, could affect NVIDIA\u2019s automotive and third-party-model support businesses and favor foreign competitors. [1]",
+    "source_ids": [
+      "44271434-adf7-4663-bd29-41af78a07644",
+      "69be264e-14e2-489e-a87b-06a317112b3b",
+      "eeaed3e7-7ec6-45b8-a2b4-b01cab3ea20a",
+      "208aa5fa-0e13-415f-bf0d-1bbb5e058b36",
+      "674d58f5-2046-49a6-a5a5-a9300a9357a7"
+    ],
+    "usage": {
+      "in": 6656,
+      "out": 597
+    }
+  },
+  {
+    "question": "What does NVIDIA attribute its Data Center revenue growth to?",
+    "answer": "NVIDIA attributes Data Center revenue growth to demand for its data center compute and networking platforms supporting accelerated computing and AI solutions. In fiscal year 2026, Blackwell architectures represented the majority of Data Center revenue. [5]  \n\nSpecifically, first-quarter fiscal 2026 Data Center computing revenue grew 76% year over year, driven by demand for the Blackwell computing platform, while Data Center networking revenue grew 56%, driven by NVLink compute fabric growth in GB200 systems and continued Ethernet adoption for AI solutions. [1]",
+    "source_ids": [
+      "016fea3e-552d-415c-83ff-fca37072b31a",
+      "3dfba5dc-aecc-4572-bc00-c2230ab11be6",
+      "6157a7aa-f805-4377-8953-e2d0520d80d3",
+      "99f10976-de33-4b47-9080-335a9f282742",
+      "c7468bfe-207c-4f3c-9c84-38f4a419e5c6"
+    ],
+    "usage": {
+      "in": 7714,
+      "out": 111
+    }
+  },
+  {
+    "question": "How is JPMorgan exposed to interest rate risk?",
+    "answer": "JPMorgan is exposed to **structural interest rate risk** from mismatches in the timing, amounts and terms of assets, liabilities and off-balance-sheet instruments that mature or reprice. Risk drivers include differences in repricing/maturity timing, the amounts repricing concurrently, changes in the yield-curve slope, and interest-rate-driven changes in asset or liability maturities. [5]\n\nThe Firm\u2019s exposure spans retained and held-for-sale loans, deposits, bank deposits and financing activities, investment securities, long-term debt, related interest-rate hedges, and funds-transfer pricing of other positions. [5] Deposit balances and deposit pricing sensitivity (\u201cdeposit betas\u201d) are particularly significant assumptions; actual rates paid and balances can differ due to customer behavior and competition for deposits. [5]\n\nHigher or lower rates and changes in rates can also affect consumer credit performance, collateral values, customer demand, and asset valuations, potentially affecting earnings, delinquencies, credit losses and fee revenue. [4]",
+    "source_ids": [
+      "f4036d2b-1977-4409-b087-2763abc036be",
+      "546a8124-b32e-442d-a5ec-27d5448f493a",
+      "54d2cd5d-3a66-4954-8393-5e31c7724bd5",
+      "9c310706-a503-43df-9dd4-057615ef9698",
+      "eb70dbf4-ef21-45cc-b870-0f84f3384cf4"
+    ],
+    "usage": {
+      "in": 7779,
+      "out": 203
+    }
+  },
+  {
+    "question": "What regulatory risks does JPMorgan disclose?",
+    "answer": "JPMorgan discloses the following regulatory risks:\n\n- **Extensive and changing regulation:** It operates under extensive global supervision and regulation, and changes in applicable law, regulatory decisions or supervisory expectations could require it to limit products, raise prices, reduce market-making liquidity, pay higher taxes or charges, absorb fraud losses, dispose of assets, forgo opportunities, or otherwise restrict activities\u2014raising costs or reducing revenues. [2]\n\n- **Noncompliance consequences:** Failure to comply with applicable law or meet supervisory expectations could lead to increased regulatory scrutiny, enforcement actions, penalties, litigation exposure and reputational harm. [2]\n\n- **Jurisdictional and policy risk:** Its principal legal and regulatory risks include differing regulatory implementation across jurisdictions or versus competitors; governmental policies that discourage relationships with certain industries or mandate practices; less predictable legal frameworks in certain jurisdictions; and repercussions from resolving litigation or government investigations. [2]\n\n- **Vendor/service-provider oversight:** Enhanced standards for oversight of vendors, outsourcing and significant banking functions could raise costs. Failure to assess and manage these relationships could result in customer harm and liability, lower revenues, higher operating costs, penalties and reputational damage. [1]\n\n- **Risk-management/control deficiencies:** Inadequacies in its risk-management framework, governance, models, reporting systems or controls could cause noncompliance, heightened regulatory scrutiny, government investigations, penalties and remediation costs. [3]\n\n- **Model approval and capital requirements:** Models used for Basel III market-, credit- and operational-risk RWA require regulatory review and approval. If not approved, JPMorgan could face higher capital charges, adversely affecting financial results or limiting business expansion. [3]\n\n- **Disclosure and reporting controls:** Material weaknesses or significant deficiencies in financial-reporting controls could produce inaccurate reporting, restrict capital-markets access, require corrective spending, and expose the firm to litigation and penalties. [3]\n\n- **Privacy and data regulation:** Global personal-information laws may restrict products, data transfers and information sharing, create conflicting country requirements, and require less-efficient or more-costly operations. Mishandling personal information\u2014or perceived noncompliance\u2014could trigger investigations, enforcement actions, penalties or required operational changes. Stricter future privacy laws could increase compliance costs or constrain offerings. [4]\n\n- **Technology, fraud and cyber-related regulation:** Inadequate controls for identity fraud could result in unauthorized transactions, financial losses and increased regulatory scrutiny. Cyber incidents may also cause privacy-law violations, investigations and penalties. [4]\n\n- **Product/technology change risk:** Failure to identify and control operational risks when introducing or changing products, services, platforms or technologies could result in regulatory intervention, higher compliance costs, litigation costs and penalties. [4]",
+    "source_ids": [
+      "ef39b017-c30e-4acc-8dea-4eb949e20673",
+      "546a8124-b32e-442d-a5ec-27d5448f493a",
+      "c8278f32-63d8-4c3f-ab4f-1726e7f72a1b",
+      "7b51fac3-35ab-443b-943c-3ce17299dfda",
+      "1359e3eb-57c9-4f1c-8885-22c1dbf9b812"
+    ],
+    "usage": {
+      "in": 7656,
+      "out": 547
+    }
+  },
+  {
+    "question": "What risks does ExxonMobil cite related to commodity price volatility?",
+    "answer": "ExxonMobil cites risks from global or regional supply-demand imbalances and other market factors, as well as economic and seasonal conditions that can affect \u201cprices, differentials, margins, and volume/mix\u201d for its products. It also cites risks from inflation-related government responses and from trading activities and derivative positions, including timing effects, that can cause quarterly variability in margins and results. [3]\n\nThe company specifically notes that oil and gas price changes can alter royalty burdens and production volumes attributable to ExxonMobil under contractual and government royalty arrangements; for example, at higher prices, fewer barrels may be required to recover costs. These effects can vary with spending patterns and market prices. [2]",
+    "source_ids": [
+      "d8e801a5-ddba-440d-8ebd-9042609a53ff",
+      "988ef089-5456-4c84-a0aa-f4df9ed0bea5",
+      "7501c59f-7572-4889-ab37-62e3fec2af23",
+      "da6f9049-ea33-46d1-886e-c6895e513613",
+      "089630fe-72d3-44a2-8a61-9bc1f89c5062"
+    ],
+    "usage": {
+      "in": 7179,
+      "out": 140
+    }
+  },
+  {
+    "question": "What product categories does Procter & Gamble operate in?",
+    "answer": "The excerpts do not list P&G\u2019s specific product categories. They state that information on \u201ckey product categories\u201d is available in MD&A and Note 2 to the Consolidated Financial Statements, which are not provided here. [1] [2]",
+    "source_ids": [
+      "3f2849db-ba0c-4cdc-a301-84fc5e2aba0b",
+      "6dc23023-f5fa-4789-b653-717b467318ef",
+      "f1fc3812-7537-4d4a-b0d7-7fc3b2211820",
+      "c8243e63-ac28-44d7-9901-b622213e36ec",
+      "9471530d-d19c-498b-a25b-3317f2e879b6"
+    ],
+    "usage": {
+      "in": 4020,
+      "out": 53
+    }
+  },
+  {
+    "question": "What does P&G say about the impact of commodity costs on margins?",
+    "answer": "P&G says higher commodity costs reduced gross margin by:\n\n- **10 basis points** in the three months ended March 31, 2026. [1]  \n- **10 basis points** in the three months ended September 30, 2025. [3]  \n- **30 basis points** in fiscal 2025. [5]  \n- **70 basis points** in the six months ended December 31, 2024. [4]  \n\nP&G also states that commodity and input-material prices directly affect its costs, and that if it cannot manage cost impacts through pricing and productivity improvements, net sales, net earnings, and cash flows may be negatively affected. [1]",
+    "source_ids": [
+      "39c7b97d-e4e4-48ae-a170-3785632678e9",
+      "33488242-fb8a-4ebe-8f8d-7b93630bb3e9",
+      "2398b289-0c4f-40cb-ab79-ecb3f393a3e1",
+      "3e58728a-124c-46e1-87f4-8ad9f3cabb9a",
+      "18242268-e443-4a81-89b7-d6186046b60d"
+    ],
+    "usage": {
+      "in": 7924,
+      "out": 145
+    }
+  },
+  {
+    "question": "What risks does UnitedHealth face from changes in government healthcare programs?",
+    "answer": "UnitedHealth faces risks that changes in government health care programs could:\n\n- Reduce enrollment or eligibility, reimbursement/payment levels, participation or expansion opportunities, while increasing administrative or medical costs. Medicaid eligibility redeterminations are specifically cited as a potential enrollment risk. [5]\n- Result from funding reductions, lower-than-expected increases, delays in funding, changed allocation methodologies, or government contract termination, materially adversely affecting results, financial position and cash flows. [5]\n- Pressure Medicare Advantage economics through benchmark cuts and risk-adjustment-payment changes. Although UnitedHealth has adjusted benefits and premiums, exited certain counties, and intensified cost management, these actions \u201cmay not fully address\u201d funding pressures. [5]\n- Produce CMS payment reductions or recoupments following government audits; Medicaid rate/reimbursement changes and audits may also result in unexpected recoupments. [5]\n- Cause loss of Medicaid members if UnitedHealth fails to renew state managed-care contracts, or loss of automatically assigned low-income Medicare Part D members if bids do not meet regional premium benchmarks; chronic failure could terminate government contracts. [5]\n- Lead to unfavorable bid outcomes if assumptions on enrollment, utilization, medical costs or other factors prove incorrect, program changes occur after bid submission, or competitors bid at lower rates. [5]\n- Reduce Medicare Advantage quality-bonus payments and plan marketability if star ratings fall below four stars or CMS changes the ratings program, potentially reducing revenue, benefits offered and people served. [5]\n- Trigger payment adjustments, fines, corrective-action plans or other adverse CMS actions through risk-adjustment data validation audits. [5]\n- Continue Medicare Advantage funding pressure from multi-year rate shortfalls and substantial risk-adjustment-model revisions, which have reduced and are expected to continue to reduce funding and potentially benefits. [3]",
+    "source_ids": [
+      "292302d3-42a7-4825-8526-3b3c6971e184",
+      "4886a369-ab2a-44a4-9d9f-bd5167192c1c",
+      "74f6cba7-1699-43da-bf9d-cac80c49abc3",
+      "dc1b3812-47d1-4471-9822-f42d60d01fe1",
+      "4322dfa5-de5a-4556-b5ee-4a26c8ce45be"
+    ],
+    "usage": {
+      "in": 7225,
+      "out": 361
+    }
+  },
+  {
+    "question": "What risks does Home Depot cite related to the housing market and consumer spending?",
+    "answer": "Home Depot cites that its performance depends significantly on stable housing and home-improvement markets and general economic conditions. Adverse conditions or uncertainty can weaken customer confidence or finances, leading customers to forgo or delay home-improvement purchases or impairing their ability to pay. [4]\n\nSpecific cited risks include unemployment and foreclosure rates, inflation/deflation, interest-rate fluctuations, financing availability, and conditions in mortgage, home-equity-loan, and consumer-credit markets. These factors may adversely affect demand, operating costs, and financial performance. [4]\n\nHome Depot specifically states that the high-interest-rate environment during fiscal 2024 adversely impacted\u2014and may continue to impact\u2014demand for larger remodeling projects. Persistent or rising inflation could reverse recent interest-rate reductions. [4]\n\nIt also notes that if specialty trade, MRO, and other Pro customers using trade credit cannot repay it, Home Depot could face greater default risk, reducing cash flow and adversely affecting operating results. [4]",
+    "source_ids": [
+      "4ff5b330-30fb-4879-be85-9b01e480ae0d",
+      "259c41a2-84e9-4ce4-9a5b-9c30c87594f2",
+      "dddc5b72-f264-4ce2-b838-c209a4796f69",
+      "9f8f6fff-02d1-45c4-a56e-5aeb7b83c0ce",
+      "de2944e2-d429-468f-8e81-1e152c402a79"
+    ],
+    "usage": {
+      "in": 7502,
+      "out": 228
+    }
+  },
+  {
+    "question": "What does Home Depot say about comparable store sales performance?",
+    "answer": "Home Depot reported the following comparable-sales performance:\n\n- **Fiscal 2024:** Total comparable sales **decreased 1.8%**, driven by a **1.0% decrease in comparable customer transactions** and a **0.9% decrease in comparable average ticket**. The company cited macroeconomic uncertainty and persistently high interest rates pressuring home-improvement demand. Power and Building Materials posted positive comparable sales; other merchandising departments were negative. [1]\n\n- **Second quarter fiscal 2025:** Total comparable sales **increased 1.0%**, reflecting a **1.4% increase in comparable average ticket**, partly offset by a **0.4% decrease in comparable customer transactions**. Foreign exchange negatively affected comparable sales by approximately **40 basis points**. [2]\n\n- **First six months of fiscal 2025:** Total comparable sales **increased 0.4%**, with a **0.7% increase in comparable average ticket** offset partly by a **0.5% decrease in comparable customer transactions**. Foreign exchange negatively affected comparable sales by approximately **55 basis points**. [2]",
+    "source_ids": [
+      "23fa93a0-093a-489c-85c7-4495ffdd80c5",
+      "a485c81b-70d7-45d9-abcf-aedb10663b54",
+      "4ff5b330-30fb-4879-be85-9b01e480ae0d",
+      "259c41a2-84e9-4ce4-9a5b-9c30c87594f2",
+      "09bd5484-1df6-4d74-a17e-8524768c445a"
+    ],
+    "usage": {
+      "in": 8081,
+      "out": 232
+    }
+  },
+  {
+    "question": "What risks does Caterpillar disclose related to global economic conditions?",
+    "answer": "Caterpillar discloses that adverse changes in global economic conditions could:\n\n- Cause material cost increases and decreases in key served markets, impairing its ability to generate funds from operations. [1]\n- Reduce customers\u2019 ability to generate funds, access capital and purchase Caterpillar products, particularly if capital-market volatility causes lenders to tighten standards and customer liquidity to decline. [1]\n- Increase Caterpillar\u2019s and Cat Financial\u2019s borrowing costs and constrain liquidity and capital-market access, especially if credit ratings are downgraded or commercial-paper markets become unavailable. [1]\n- Prevent Cat Financial from obtaining adequate funding, raise its financing costs, or impair its ability to operate, grow, and meet maturing debt obligations; committed lending arrangements or alternative funding may not be sufficient or available in extreme conditions. [1]\n- Reduce financing demand and worsen customer payment patterns, increasing delinquencies, defaults, write-offs and provisions for credit losses at Cat Financial. [1]\n- Impair the accuracy of management\u2019s credit-loss estimates, which rely on forecasts of economic conditions and borrowers\u2019 ability to repay. [1]\n- Increase customer delinquencies, repossessions and net losses, adversely affecting Cat Financial\u2019s and Caterpillar\u2019s earnings and cash flows. Relevant factors include industry and economic conditions, capital availability, commodity prices, political events and collateral values. [1]\n- Disrupt supply availability: Caterpillar reports that increased demand or supply-chain disruptions have, in some cases, resulted in parts and component constraints. [5]",
+    "source_ids": [
+      "4380d789-678d-437d-87c6-8a41ab3029a6",
+      "3817ede8-28b4-488e-b3e7-8d39677ac9b2",
+      "3f0a4b42-0845-4454-b83d-014569205239",
+      "671f7041-2079-49ae-97e3-76c134c0356e",
+      "3ba39164-1c55-4149-be61-97cca5549040"
+    ],
+    "usage": {
+      "in": 7429,
+      "out": 307
+    }
+  },
+  {
+    "question": "How is Caterpillar exposed to foreign currency risk?",
+    "answer": "Caterpillar\u2019s Financial Products operations are exposed to foreign-currency risk from:\n\n- **Conversion and remeasurement of net foreign-currency balance-sheet positions** and **future transactions denominated in foreign currencies**. Its objective is to minimize resulting earnings volatility. [4]\n- **Currency mismatches between assets and liabilities** and exchange-rate risk on future foreign-currency transactions. Caterpillar may use foreign-currency forward, option and cross-currency contracts to offset these exposures. [4]\n- Its primary non-competitive-risk exposures are movements in the **Australian dollar, Chinese yuan, Euro, Indian rupee and Mexican peso**. [4]\n- The disclosed sensitivity analysis states that a hypothetical **10 percent** change in the U.S. dollar relative to all other currencies would not materially affect consolidated financial position, results of operations or cash flow; however, this analysis excludes competitive effects, which could produce different results. [4]",
+    "source_ids": [
+      "4380d789-678d-437d-87c6-8a41ab3029a6",
+      "3817ede8-28b4-488e-b3e7-8d39677ac9b2",
+      "ba359a16-ac02-4d3d-92b0-2fc4b0fffd1c",
+      "98cd9b95-4010-434f-a638-eef3b0f78e8f",
+      "671f7041-2079-49ae-97e3-76c134c0356e"
+    ],
+    "usage": {
+      "in": 7420,
+      "out": 190
+    }
+  },
+  {
+    "question": "What are Coca-Cola's primary sources of revenue?",
+    "answer": "Coca-Cola operates through two primary revenue sources:\n\n1. **Concentrate operations:** Sales of beverage concentrates (\u201cbeverage bases\u201d), syrups (including fountain syrups), and certain finished beverages to authorized bottlers. [3]\n\n2. **Finished product operations:** Sales of sparkling soft drinks and other finished beverages to retailers, distributors, and wholesalers. These operations consist primarily of consolidated bottling and distribution operations. [3]\n\nIt also sells directly to consumers through Costa-operated retail stores, reported in the EMEA segment, and sells fountain syrups in the United States. [3]",
+    "source_ids": [
+      "dc819017-d1bd-429f-ae7c-642a06b32f89",
+      "35b9ab4e-a85b-4d78-b380-1743f74c31e1",
+      "f85963ac-3d5b-4f5e-a7f5-7e7910db0475",
+      "9b83bd65-4830-45d1-8f0d-529fb29ed1ec",
+      "1eb9f8be-3d6e-49a1-b34a-8c7b2629411c"
+    ],
+    "usage": {
+      "in": 7764,
+      "out": 121
+    }
+  },
+  {
+    "question": "What risks does Coca-Cola cite regarding changing consumer preferences?",
+    "answer": "Coca-Cola cites that changing consumer preferences may create risks from:\n\n- **Health and obesity concerns:** Consumer, public-health and government concern about obesity and chronic diseases presents a challenge to the beverage industry. [5]\n- **Demand for different product attributes:** Consumers increasingly seek more beverage choices, personalization, sustainability, and transparency about products and packaging; Coca-Cola must adapt its portfolio, packaging and information offerings accordingly. [5]\n- **Digital shopping changes:** Consumers are rapidly shifting to mobile apps, e-commerce retailers and websites, requiring Coca-Cola to maintain brand competitiveness and relevance, loyalty and market share in a digital environment. [5]\n- **Potential reputational effects of sustainability performance:** Failure to achieve or improperly report progress toward emissions-reduction goals, or discontinuing carbon-footprint initiatives, could generate negative publicity and adversely affect consumer preference for its products. [3]\n- **Weather-driven demand shifts:** Unusually cold or rainy summer weather can temporarily reduce product demand and sales. [3]",
+    "source_ids": [
+      "25a31d60-9898-4f1c-bb61-19e4a2494bc4",
+      "e4487655-78ce-4509-9204-4dd0150888b4",
+      "119ec482-13ad-4c72-9425-814aedc700b6",
+      "4201f333-a8c8-4e8a-95d7-2baa047c3ebb",
+      "64033754-b509-4d80-ba2a-3de4575cbfd9"
+    ],
+    "usage": {
+      "in": 5224,
+      "out": 202
+    }
+  },
+  {
+    "question": "What risks does Pfizer disclose related to patent expirations?",
+    "answer": "Pfizer discloses that loss, expiration or invalidation of intellectual-property rights, as well as patent litigation settlements/judgments and expiration of co-promotion or licensing rights, can materially adversely affect revenues. After patent protection expires or is lost following a legal challenge, Pfizer typically loses market exclusivity; generic and biosimilar competitors may launch identical or highly similar products at lower prices. Resulting price competition can substantially reduce revenue for affected products, often rapidly. [4]\n\nPfizer expects a moderate revenue impact from patent expiries in 2025 and a more significant revenue impact in 2026 through 2030 as several in-line products face patent-based or regulatory-exclusivity expirations. It also cautions that there is no assurance a product will retain market exclusivity for the full estimated or guided period. [4]\n\nAdditionally, Pfizer states that patent challenges may result in loss of patent protection, which could cause a significant loss of sales and materially affect future operating results. [2]",
+    "source_ids": [
+      "bca6f9c5-a685-41cf-a7e9-c1d87e90e368",
+      "8d77dd86-f4c8-4bb7-b614-1c837fce7212",
+      "1bc4c217-4fe7-491d-9658-d41640362823",
+      "bca59301-8b89-477d-89fd-7a0b01f60c76",
+      "14fe3a35-fe59-476b-ae9f-bae3f696674a"
+    ],
+    "usage": {
+      "in": 7737,
+      "out": 204
+    }
+  },
+  {
+    "question": "What does Pfizer say about revenue tied to its COVID-19 products?",
+    "answer": "Pfizer says COVID-19-product revenue is uncertain and demand-dependent:\n\n- **Paxlovid:** Pfizer expects most revenue through commercial channels. Utilization is expected to follow COVID-19 infection rates and stable market share; Pfizer expects a higher proportion of 2025 Paxlovid revenue in the second half, and revenue may fluctuate with the timing, duration and severity of COVID-19 cases. [1] Paxlovid revenues trend with infection rates. [3]\n- **Comirnaty:** Revenue is seasonal, with a greater portion anticipated in the fall and winter, and may be affected by changes in vaccination recommendations. [3]\n- **Forecasting risk:** Pfizer states that demand for its COVID-19 products has been, and may continue to be, reduced or below expectations, potentially causing reduced revenues, excess inventory or other unanticipated charges. It also identifies uncertainty in accurately predicting revenue for Comirnaty and Paxlovid. [2]\n- **2025 reported drivers:** In Q2 2025, worldwide revenue growth from Comirnaty was **$185 million** and from Paxlovid was **$178 million** versus Q2 2024. For the first six months of 2025, Comirnaty contributed **$404 million** of worldwide growth, while Paxlovid had a **$1.358 billion** worldwide decline versus the prior-year period. [1]",
+    "source_ids": [
+      "28e43191-2e85-45f7-a26b-da2013f7eb9a",
+      "668ffa8a-1968-4a8a-8b9a-2f3de539e9f1",
+      "b8318174-b569-4767-af04-9461e25d4d48",
+      "14fe3a35-fe59-476b-ae9f-bae3f696674a",
+      "860af1d4-3fab-4d31-b45d-fca065fbf073"
+    ],
+    "usage": {
+      "in": 6998,
+      "out": 291
+    }
+  },
+  {
+    "question": "What risks does Boeing cite related to production and regulatory approval of its aircraft?",
+    "answer": "Boeing cites the following production and regulatory-approval risks:\n\n- **FAA limits on 737 production increases:** The FAA stated it would not approve 737 production rates above 38 per month or additional production lines until Boeing complies with required quality and safety standards. Failure to raise rates as assumed could materially affect Boeing\u2019s financial position, operating results, and cash flows. [1]\n\n- **Certification delays for new/derivative aircraft:** Boeing has experienced significant certification delays for the 777X, 737-7, and 737-10. Timing is ultimately determined by regulators, and delays may impair timely deliveries, compliance with performance/reliability standards, and program profitability. [1]\n\n- **Quality-control and regulatory-oversight risks:** Following the 737-9 Production Audit, the FAA found multiple instances in which Boeing and Spirit failed to comply with manufacturing quality-control requirements. The FAA also increased oversight and required a corrective-action plan. [4]\n\n- **Production-system disruptions:** Delayed production-rate changes, disruptions from rate changes, supplier inability to deliver compliant components at required cost and rates, certification delays, defects, and failure to obtain required regulatory approvals can cause out-of-sequence work, increased production costs, delayed customer deliveries, warranty/fleet-support costs, lower revenue, and reduced operating margins. [3]\n\n- **Supply-chain, labor, and inflation pressures:** Boeing and its suppliers face supply-chain disruptions and constraints, labor instability, and inflationary pressures, which can reduce productivity and adversely affect financial position, results, and cash flows. [3]\n\n- **Program-specific 777X risks:** Boeing cited certification timing, change incorporation on completed aircraft, labor and supply-chain disruptions, customer delivery timing and negotiations, production-rate adjustments, and possible contraction of the accounting quantity as factors that could cause additional 777X reach-forward losses. [4]\n\n- **Regulatory shutdown risk:** A lapse in U.S. government appropriations could furlough FAA personnel, impair Boeing\u2019s ability to deliver commercial aircraft, and delay certification of new aircraft. [3]",
+    "source_ids": [
+      "fbf66a3f-2a67-40e2-b8d2-abc7d0673910",
+      "626f0564-4f2f-43e0-9add-b9dc6a16d421",
+      "a6c7a26e-760b-4eeb-bbeb-7b9cf1d98ca3",
+      "ee5839ff-16c3-492f-86de-894a7b4d55b1",
+      "2aec067f-94c4-41e2-ac7d-804a147f82d2"
+    ],
+    "usage": {
+      "in": 7427,
+      "out": 420
+    }
+  },
+  {
+    "question": "What does Boeing say about its commercial airplane deliveries?",
+    "answer": "Boeing says commercial-airplane deliveries have been affected by production, certification, quality, labor, and supply-chain issues:\n\n- **737:** Boeing expected to deliver approximately **55 737-8s** produced before 2023 in 2025 as of December 31, 2024; by September 30, 2025, about **five** remained in inventory for China customers and were scheduled for 2025 delivery. Certification and first deliveries of the 737-7 and 737-10 have been delayed by work on the engine anti-ice system; Boeing expected certification in 2026. [5] [4]\n- **777X:** Boeing\u2019s expected first 777-9 delivery moved from **2026** to **2027** as of September 30, 2025. It expects the 777-8 Freighter about two years after the 777-9, while the 777-8 passenger airplane is not expected before 2030. [3] [4]\n- **787:** As of September 30, 2025, Boeing had approximately **10** pre-2023 aircraft in inventory requiring rework and expected to deliver them in **2025 and 2026**. [4]\n- Boeing cautioned that inability to deliver aircraft, increase production rates, or certify the 737-7 and 737-10 consistent with its assumptions would adversely affect its financial position, results of operations, and cash flows. [4]",
+    "source_ids": [
+      "2c7a2767-2b13-4904-a962-8f1bc7153d5f",
+      "e9098b22-00e7-43d1-a0f7-8c3531eaacf0",
+      "ee5839ff-16c3-492f-86de-894a7b4d55b1",
+      "dc8245d6-546c-4538-b259-2bdf0ad854bb",
+      "db91de50-f69e-4215-8ba0-1d09083f6d97"
+    ],
+    "usage": {
+      "in": 7929,
+      "out": 375
+    }
+  },
+  {
+    "question": "What are Disney's main business segments?",
+    "answer": "Disney operates in three main business segments:\n\n- **Entertainment** \u2014 non-sports global film and episodic-content production and distribution, including linear networks, direct-to-consumer services (such as Disney+ and Hulu), and content sales/licensing. [2]\n- **Sports** \u2014 Disney identifies Sports as one of its three operating segments. [2]\n- **Experiences** \u2014 parks and experiences (including theme parks, resorts, Disney Cruise Line and vacation offerings) and consumer products. [3]",
+    "source_ids": [
+      "8163110b-c657-45d8-9345-55289c22ed90",
+      "490b26cf-3372-44fb-b3fe-6c6007603c1d",
+      "b418c5dc-00a4-445d-85f5-3c2e907cc873",
+      "0b385e68-e5e8-41ca-84d5-aa75f467a710",
+      "38da7cd4-e78d-43b3-89f9-855265c18ec6"
+    ],
+    "usage": {
+      "in": 7757,
+      "out": 104
+    }
+  },
+  {
+    "question": "What risks does Disney disclose about its streaming business?",
+    "answer": "Disney discloses the following streaming/DTC risks:\n\n- **Execution and cost risk:** The cost of executing its DTC strategy may continue to grow or decline more slowly than anticipated. This could affect distribution across platforms, the content offered, content-window timing/sequencing, and the financial results of DTC services and other platforms. [1]\n\n- **Content and asset-impairment risk:** Changes in technology, consumer purchasing patterns, acceptance of content, and macroeconomic conditions may impair asset values. Disney has impaired content primarily at DTC services following strategic content curation changes and removal of content from platforms, and may make further write-downs. [1]\n\n- **Short-term performance and forecasting risk:** New offerings generally negatively affect operating results in the short term; results may not be even quarter-over-quarter; and expansion may not occur as anticipated. Forecasting is difficult because of limited experience in new businesses, rapidly changing competition, external volatility, and the ability to obtain or develop content and rights. [1]\n\n- **Investment-return risk:** Disney has made substantial DTC investments. Their success is uncertain; returns may be negative or lower than anticipated, investment may divert resources from other businesses, costs increase with such investments, and unsuccessful investments could result in significant asset write-downs. [1]\n\n- **Advertising, distribution and third-party risk:** Disney earns advertising revenue on DTC services and depends partly on third parties that distribute programming or sell licensed products/services. A contraction in distribution channels or advertisers purchasing ads on its platforms, including from legal or regulatory developments, could adversely affect results. [1]\n\n- **Competition risk:** Disney faces substantial competition from alternative providers and other forms of entertainment, including competition for personnel, content, and other operating resources; this can pressure revenue, raise costs, and affect results. [1]\n\n- **Subscriber and advertising variability:** Affiliate and subscription revenues vary with subscriber levels of MVPDs and Disney\u2019s streaming services. Advertising revenue from sports programming is affected by viewership, demand for sports programming, and the timing of sports seasons and events. [3]",
+    "source_ids": [
+      "31fec407-6b19-4064-b4d0-c951d1ed9747",
+      "adf34d96-371e-4dc2-b757-dc8d00e14844",
+      "b418c5dc-00a4-445d-85f5-3c2e907cc873",
+      "47513b02-f4b3-458d-b843-d3da8537f16e",
+      "8163110b-c657-45d8-9345-55289c22ed90"
+    ],
+    "usage": {
+      "in": 6096,
+      "out": 425
+    }
+  },
+  {
+    "question": "What supply chain risks does Cisco cite?",
+    "answer": "Cisco cites the following supply-chain risks:\n\n- **Manufacturing-capacity and component-supply constraints**, including fiscal-2026 memory shortages and rising costs for constrained memory components. [1]\n- **Higher inventory, purchase commitments, deposits, and prepayments** undertaken to secure components, manufacturing capacity, supply, pricing, and lead times\u2014particularly for Cisco Silicon One, memory, and products serving hyperscalers. [1][2]\n- **Significant supply-chain exposure and product-gross-margin pressure** from these commitments and prepayments, with potential for additional negative impacts in future periods. [1]\n- **Material excess and obsolete inventory, purchase-commitment losses, or other charges** if demand declines or is delayed, planned products do not generate demand, customer requirements or technology architectures change, or Cisco cannot otherwise mitigate the exposure. [1]\n- **Forecasting risk**, especially because future demand is difficult to predict in rapidly evolving areas such as AI infrastructure. [1]\n- **Firm, noncancelable, unconditional commitments** constitute a significant portion of reported purchase commitments, although some arrangements permit cancellation, rescheduling, or adjustments before firm orders. [2]\n- **Rapid technology and customer-requirement changes**, which elevate inventory-obsolescence risk while Cisco balances supply-chain flexibility and competitive lead times. [2]\n- **Supplier or contract-manufacturer financial deterioration**, as well as incorrect parts ordering relative to demand, which can result in inventory-holding charges, lost cost savings, or higher component costs. [1]\n- **Cost and logistics inflation**, including component costs, broker fees, expedited freight, overtime, tariffs, and inflation, particularly during supply constraints. [1]",
+    "source_ids": [
+      "54557362-bf9c-4bfe-a1e1-692d826d45ff",
+      "cb23b726-3325-4ebd-8491-6572998b4d95",
+      "76ed1e1b-556f-45ea-a379-76ce4cb994f2",
+      "c2f5a6a4-6867-4e65-95f4-b2d0b2d5328d",
+      "2d0a1a1c-8670-4a59-a7fe-82b42d9c80f5"
+    ],
+    "usage": {
+      "in": 7170,
+      "out": 344
+    }
+  },
+  {
+    "question": "What does Cisco say about product revenue trends?",
+    "answer": "Cisco reported the following product-revenue trends:\n\n- **Q3 fiscal 2026:** Product revenue increased **17%** year over year, driven by **Networking growth of 25%**, particularly AI Infrastructure and Campus Networking. Observability grew **3%**; Collaboration declined **1%**; and Security was flat. [1]\n- **First nine months of fiscal 2026:** Product revenue increased **13%** year over year. [1]\n- By geography in Q3 fiscal 2026, product revenue grew **20%** in the Americas, **11%** in EMEA, and **14%** in APJC. The Americas growth was led by Service Provider and Cloud demand, largely from AI Infrastructure solutions. [4]\n- Cisco cited **memory constraints and costs** and **trade policy** as challenges affecting its operating environment. [1]\n\nFor comparison, in Q1 fiscal 2025, product revenue had decreased **9%**, including a **23%** decline in Networking as shipments normalized from elevated prior-quarter levels. [3]",
+    "source_ids": [
+      "a56e5da9-b15d-4a44-ae7c-9754fc729415",
+      "9462a7a6-e9a7-4e51-967a-3e3167a9e8b1",
+      "3d188bda-df0b-473e-8254-01742fad48b2",
+      "4c040cc1-728d-4c36-9274-6f043324338b",
+      "2795d69d-6638-4566-8e53-a720eae281b6"
+    ],
+    "usage": {
+      "in": 7923,
+      "out": 221
+    }
+  }
+]

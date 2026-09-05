@@ -1,0 +1,205 @@
+[
+  {
+    "question": "What risks does Apple face from its reliance on third-party manufacturing and suppliers?",
+    "total_claims": 9,
+    "supported_claims": 9,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "How could foreign exchange rate fluctuations affect Apple's results?",
+    "total_claims": 4,
+    "supported_claims": 4,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What does Apple say drove changes in its Services revenue?",
+    "total_claims": 3,
+    "supported_claims": 3,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What are Microsoft's main operating segments?",
+    "total_claims": 3,
+    "supported_claims": 3,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What cybersecurity risks does Microsoft disclose?",
+    "total_claims": 9,
+    "supported_claims": 9,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What does Microsoft attribute its Intelligent Cloud growth to?",
+    "total_claims": 4,
+    "supported_claims": 4,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What risks does NVIDIA cite related to competition in the GPU market?",
+    "total_claims": 6,
+    "supported_claims": 6,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "How do export controls and trade restrictions affect NVIDIA?",
+    "total_claims": 8,
+    "supported_claims": 8,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What does NVIDIA attribute its Data Center revenue growth to?",
+    "total_claims": 2,
+    "supported_claims": 2,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "How is JPMorgan exposed to interest rate risk?",
+    "total_claims": 4,
+    "supported_claims": 4,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What regulatory risks does JPMorgan disclose?",
+    "total_claims": 10,
+    "supported_claims": 10,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What risks does ExxonMobil cite related to commodity price volatility?",
+    "total_claims": 2,
+    "supported_claims": 2,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What product categories does Procter & Gamble operate in?",
+    "total_claims": 1,
+    "supported_claims": 1,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What does P&G say about the impact of commodity costs on margins?",
+    "total_claims": 5,
+    "supported_claims": 5,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What risks does UnitedHealth face from changes in government healthcare programs?",
+    "total_claims": 7,
+    "supported_claims": 7,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What risks does Home Depot cite related to the housing market and consumer spending?",
+    "total_claims": 3,
+    "supported_claims": 3,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What does Home Depot say about comparable store sales performance?",
+    "total_claims": 3,
+    "supported_claims": 3,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What risks does Caterpillar disclose related to global economic conditions?",
+    "total_claims": 5,
+    "supported_claims": 5,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "How is Caterpillar exposed to foreign currency risk?",
+    "total_claims": 4,
+    "supported_claims": 4,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What are Coca-Cola's primary sources of revenue?",
+    "total_claims": 3,
+    "supported_claims": 3,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What risks does Coca-Cola cite regarding changing consumer preferences?",
+    "total_claims": 5,
+    "supported_claims": 5,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What risks does Pfizer disclose related to patent expirations?",
+    "total_claims": 3,
+    "supported_claims": 3,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What does Pfizer say about revenue tied to its COVID-19 products?",
+    "total_claims": 4,
+    "supported_claims": 4,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What risks does Boeing cite related to production and regulatory approval of its aircraft?",
+    "total_claims": 4,
+    "supported_claims": 4,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What does Boeing say about its commercial airplane deliveries?",
+    "total_claims": 4,
+    "supported_claims": 4,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What are Disney's main business segments?",
+    "total_claims": 3,
+    "supported_claims": 3,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What risks does Disney disclose about its streaming business?",
+    "total_claims": 4,
+    "supported_claims": 4,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What supply chain risks does Cisco cite?",
+    "total_claims": 5,
+    "supported_claims": 5,
+    "unsupported": [],
+    "faithfulness": 1.0
+  },
+  {
+    "question": "What does Cisco say about product revenue trends?",
+    "total_claims": 4,
+    "supported_claims": 4,
+    "unsupported": [],
+    "faithfulness": 1.0
+  }
+]

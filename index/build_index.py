@@ -6,13 +6,17 @@ from qdrant_client.models import Distance, VectorParams, PointStruct
 
 ROOT = Path(__file__).resolve().parents[1]
 
-# Start small/fast to get the pipeline working. Upgrade later to
-# "BAAI/bge-m3" for higher quality once everything runs end to end.
-model = SentenceTransformer("BAAI/bge-small-en-v1.5")
+# Upgraded from bge-small-en-v1.5 to the bigger bge-m3 (1024-dim). See
+# eval/RESULTS.md: this made retrieval worse, not better. Best guess why -
+# bge-m3's own default max_seq_length is 8192, but it's capped to 1024 below
+# and most of our chunks run ~1700 tokens, so this truncates most chunks
+# before they're even embedded.
+_model = SentenceTransformer("BAAI/bge-m3")
+_model.max_seq_length = 1024
 
 chunks = pd.read_parquet(ROOT / "data" / "processed" / "chunks.parquet")
-vecs = model.encode(chunks["text"].tolist(), batch_size=32,
-                    show_progress_bar=True, normalize_embeddings=True)
+vecs = _model.encode(chunks["text"].tolist(), batch_size=32,
+                     show_progress_bar=True, normalize_embeddings=True)
 
 client = QdrantClient(path=str(ROOT / "data" / "qdrant"))   # a local file-based DB
 if client.collection_exists("filings"):

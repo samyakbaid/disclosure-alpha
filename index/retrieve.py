@@ -4,7 +4,8 @@ from qdrant_client import QdrantClient
 from qdrant_client.models import Filter, FieldCondition, MatchValue
 
 ROOT = Path(__file__).resolve().parents[1]
-_model = SentenceTransformer("BAAI/bge-small-en-v1.5")   # must match build_index
+_model = SentenceTransformer("BAAI/bge-m3")
+_model.max_seq_length = 1024
 _client = QdrantClient(path=str(ROOT / "data" / "qdrant"))
 
 def retrieve(query, k=5, ticker=None, section=None):

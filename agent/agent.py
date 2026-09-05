@@ -83,10 +83,10 @@ def run(question, ticker=None, k=5, verbose=True):
         f"[{i}] {c['ticker']} | {c['fiscal_period']} | {c['section']}\n{c['text']}"
         for i, c in enumerate(all_chunks, 1))
 
-    draft, u = _call(STRONG, SYNTH, f"Excerpts:\n\n{ctx}\n\nQuestion: {question}")
+    draft, u = _call(CHEAP, SYNTH, f"Excerpts:\n\n{ctx}\n\nQuestion: {question}")
     tokens_in += u.prompt_tokens; tokens_out += u.completion_tokens
 
-    final, u = _call(STRONG, VERIFY, f"SOURCES:\n{ctx}\n\nANSWER:\n{draft}")
+    final, u = _call(CHEAP, VERIFY, f"SOURCES:\n{ctx}\n\nANSWER:\n{draft}")
     tokens_in += u.prompt_tokens; tokens_out += u.completion_tokens
     trace.append({"step": "verify", "changed": final.strip() != draft.strip()})
 
